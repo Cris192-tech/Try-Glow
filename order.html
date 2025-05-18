@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Try & Glow</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style1.css" />
+</head>
+
+<body>
+  <header>
+    <div class="navbar">
+      <div class="head">
+        <h1>Try & Glow</h1>
+        <p class="tagline">try it, test it & glow on!</p>
+      </div>
+
+      <div class="button">
+        <button onclick="filterProducts('all')">All</button>
+        <button onclick="filterProducts('Mamaearth')">Mamaearth</button>
+        <button onclick="filterProducts('MCaffeine')">MCaffeine</button>
+        <button onclick="filterProducts('Foxtale')">Foxtale</button>
+        <button onclick="filterProducts('Dot & Key')">Dot & Key</button>
+        <button onclick="filterProducts('Pilgrim')">Pilgrim</button>
+        <button onclick="filterProducts('Plum')">Plum</button>
+      </div>
+    </div>
+  </header>
+
+  <div class="slideshow-container">
+    <div class="slide fade">
+      <img src="logo1.png" alt="Try & Glow Logo">
+    </div>
+    <div class="slide fade">
+      <img src="FLAT40OFF.png" alt="Offer 1">
+    </div>
+    <div class="slide fade">
+      <img src="offer002.png" alt="Offer 2">
+    </div>
+  </div>
+
+
+  <section class="products">
+    <h2>Our Products</h2>
+    <div class="product-grid">
+      <div class="product" data-brand="Mamaearth">
+        <img src="mamaearth_facewash_1024x1024.png" alt="Mamaearth Facewash" class="clickable-image"
+          onclick="openModal(this)" data-title="Mamaearth" data-subtitle="Aloe Vera & Ashwagandha Face Wash"
+          data-desc="Gentle and refreshing daily cleanser for glowing skin.">
+        <h3>Mamaearth</h3>
+        <h5>Aloe Vera & Ashwagandha Face Wash</h5>
+        <p><s>₹99</s> ₹59</p>
+        <a href="https://forms.gle/E9bjfoMVqKr5KsKD9" class="order-button">Buy</a>
+      </div>
+
+      <div class="product" data-brand="MCaffeine">
+        <img src="mcaffeine Face scrub.png" alt="MCaffeine Scrub" class="clickable-image" onclick="openModal(this)"
+          data-title="MCaffeine" data-subtitle="Naked & Raw Coffee Face Scrub"
+          data-desc="Infused with Coffee and Vitamin E. Ideal for normal to oily skin. (15g)">
+        <h3>MCaffeine</h3>
+        <h5>Naked & Raw Coffee Face Scrub</h5>
+        <p><s>₹99</s> ₹59</p>
+        <a href="https://forms.gle/E9bjfoMVqKr5KsKD9" class="order-button">Buy</a>
+      </div>
+
+      <div class="product" data-brand="Foxtale">
+        <img src="Foxtale Cleanser.png" alt="Foxtale Cleanser" class="clickable-image" onclick="openModal(this)"
+          data-title="Foxtale" data-subtitle="The Daily Duet Hydrating Cleanser"
+          data-desc="Deeply cleanses while retaining skin's natural moisture.">
+        <h3>Foxtale</h3>
+        <h5>The Daily Duet Hydrating Cleanser</h5>
+        <p><s>₹99</s> ₹59</p>
+        <a href="https://forms.gle/E9bjfoMVqKr5KsKD9" class="order-button">Buy</a>
+      </div>
+
+
+      <div class="product" data-brand="Foxtale">
+        <img src="Foxtale Moisturizer.png" alt="Foxtale Moisturizer" class="clickable-image" onclick="openModal(this)"
+          data-title="Foxtale" data-subtitle="In The Limelight Super Glow Moisturizer"
+          data-desc="Lightweight moisturizer for radiant and hydrated skin.">
+        <h3>Foxtale</h3>
+        <h5>In The Limelight Super Glow Moisturizer</h5>
+        <p><s>₹99</s> ₹59</p>
+        <a href="https://forms.gle/E9bjfoMVqKr5KsKD9" class="order-button">Buy</a>
+      </div>
+
+       <div class="product" data-brand="Foxtale">
+        <img src="Foxtale Sunscreen.png" alt="Foxtale Sunscreen" class="clickable-image" onclick="openModal(this)"
+          data-title="Foxtale" data-subtitle="Golden Hour Glow Sunscreen"
+          data-desc="Broad-spectrum SPF 50 PA++++ sunscreen with Vitamin C and Niacinamide for glowing, tan-free skin.">
+        <h3>Foxtale</h3>
+        <h5>Golden Hour Glow SPF 50 Sunscreen</h5>
+        <p><s>₹99</s> ₹59</p>
+        <a href="https://forms.gle/E9bjfoMVqKr5KsKD9" class="order-button">Buy</a>
+      </div>
+
+      <div class="product" data-brand="Dot & Key">
+        <img src="D&K Facewash2.png" alt="Dot & Key Facewash" class="clickable-image" onclick="openModal(this)"
+          data-title="Dot & Key" data-subtitle="Barrier Repair + Hydrating Gentle Face Wash"
+          data-desc="Soothes and restores the skin barrier for a healthy glow.">
+        <h3>Dot & Key</h3>
+        <h5>Barrier Repair + Hydrating Gentle Face Wash</h5>
+        <p><s>₹99</s> ₹59</p>
+        <a href="https://forms.gle/E9bjfoMVqKr5KsKD9" class="order-button">Buy</a>
+      </div>
+
+      <div class="product" data-brand="Dot & Key">
+        <img src="D&K Facewash.png" alt="Dot & Key Facewash" class="clickable-image" onclick="openModal(this)"
+          data-title="Dot & Key" data-subtitle="Mango Detan Gel Face Wash"
+          data-desc="Brightens and evens skin tone with natural mango extracts.">
+        <h3>Dot & Key</h3>
+        <h5>Mango Detan Gel Face Wash</h5>
+        <p><s>₹99</s> ₹59</p>
+        <a href="https://forms.gle/E9bjfoMVqKr5KsKD9" class="order-button">Buy</a>
+      </div>
+
+      <div class="product" data-brand="Dot & Key">
+        <img src="D&K Sunscreen.png" alt="Dot & Key Sunscreen" class="clickable-image" onclick="openModal(this)"
+          data-title="Dot & Key" data-subtitle="Vitamin C + E SPF 50 Sunscreen"
+          data-desc="Broad-spectrum protection with a lightweight finish.">
+        <h3>Dot & Key</h3>
+        <h5>Vitamin C + E SPF 50 Sunscreen</h5>
+        <p><s>₹149</s> ₹89</p>
+        <a href="https://forms.gle/E9bjfoMVqKr5KsKD9" class="order-button">Buy</a>
+      </div>
+
+      <div class="product" data-brand="Plum">
+        <img src="Plum Sunscreen.png" alt="Plum Sunscreen" class="clickable-image" onclick="openModal(this)"
+          data-title="Plum" data-subtitle="Rice Water & Niacinamide hybrid Sunscreen"
+          data-desc="Plum Hybrid Sunscreen with SPF 50 PA+++ combines rice water and 2% niacinamide for bright, protected skin.">
+        <h3>Plum</h3>
+        <h5>Rice Water & Niacinamide hybrid Sunscreen</h5>
+        <p><s>₹149</s> ₹89</p>
+        <a href="https://forms.gle/E9bjfoMVqKr5KsKD9" class="order-button">Buy</a>
+      </div>
+
+      <div class="product" data-brand="Plum">
+        <img src="Plum Moisturizer.png" alt="Plum Moisturizer" class="clickable-image" onclick="openModal(this)"
+          data-title="Plum" data-subtitle="Rice Water & Niacinamide Clear Moisture Gel Cream"
+          data-desc="Plum Rice Water & Niacinamide 2% Moisturizer is a lightweight cream that hydrates, brightens, and soothes the skin.">
+        <h3>Plum</h3>
+        <h5>Rice Water & Niacinamide Clear Moisture Gel Cream</h5>
+        <p><s>₹175</s> ₹105</p>
+        <a href="https://forms.gle/E9bjfoMVqKr5KsKD9" class="order-button">Buy</a>
+      </div>
+
+      <div class="product" data-brand="Plum">
+        <img src="PLum Facewash.png" alt="Plum Facewash" class="clickable-image" onclick="openModal(this)"
+          data-title="Plum" data-subtitle="Rice Water & Niacinamide Simply Bright Face Wash"
+          data-desc="Gentle face wash with 2% Niacinamide and rice water that brightens and softens skin.">
+        <h3>Plum</h3>
+        <h5>Rice Water & Niacinamide Simply Bright Face Wash</h5>
+        <p><s>₹95</s> ₹57</p>
+        <a href="https://forms.gle/E9bjfoMVqKr5KsKD9" class="order-button">Buy</a>
+      </div>
+
+      <div class="product" data-brand="Pilgrim">
+        <img src="pilgrim sunscreen.png" alt="Pilgrim Sunscreen" class="clickable-image" onclick="openModal(this)"
+          data-title="Pilgrim" data-subtitle="2% Niacinamide Glow SPF 50 Sunscreen"
+          data-desc="Brightening formula that shields and repairs the skin.">
+        <h3>Pilgrim</h3>
+        <h5>2% Niacinamide Glow SPF 50 Sunscreen</h5>
+        <p><s>₹200</s> ₹120</p>
+        <a href="https://forms.gle/E9bjfoMVqKr5KsKD9" class="order-button">Buy</a>
+      </div>
+
+      <!-- Add more products here similarly -->
+    </div>
+
+    <!-- <a href="https://forms.gle/E9bjfoMVqKr5KsKD9" class="order-button">Place an Order</a> -->
+  </section>
+
+  <!-- Modal -->
+  <div id="imageModal" class="modal" onclick="closeModal()">
+    <span class="close">&times;</span>
+    <div class="modal-content-container" onclick="event.stopPropagation()">
+      <img class="modal-content" id="modalImg">
+      <div class="modal-text">
+        <h3 id="modalTitle"></h3>
+        <h5 id="modalSubtitle"></h5>
+        <p id="modalDesc"></p>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>Follow us: <a href="https://instagram.com/tryandglow.shop" target="_blank">@tryandglow.shop</a></p>
+    <p>Contact: <a href="https://wa.me/917021337420">WhatsApp Us</a></p>
+    <p>&copy; 2025 Try & Glow</p>
+  </footer>
+
+  <script>
+    function openModal(imgElement) {
+      document.getElementById("imageModal").style.display = "flex";
+      document.getElementById("modalImg").src = imgElement.src;
+      document.getElementById("modalTitle").innerText = imgElement.dataset.title;
+      document.getElementById("modalSubtitle").innerText = imgElement.dataset.subtitle;
+      document.getElementById("modalDesc").innerText = imgElement.dataset.desc;
+    }
+
+    function closeModal() {
+      document.getElementById("imageModal").style.display = "none";
+    }
+
+    function filterProducts(brand) {
+      const products = document.querySelectorAll(".product");
+      products.forEach(p => {
+        const productBrand = p.getAttribute("data-brand");
+        if (brand === "all" || productBrand === brand) {
+          p.style.display = "block";
+        } else {
+          p.style.display = "none";
+        }
+      });
+    }
+    let slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+      const slides = document.getElementsByClassName("slide");
+      for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) { slideIndex = 1; }
+      slides[slideIndex - 1].style.display = "block";
+      setTimeout(showSlides, 3000); // Change every 3 seconds
+    }
+  </script>
+</body>
+
+</html>
